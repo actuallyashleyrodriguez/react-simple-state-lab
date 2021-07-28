@@ -23,7 +23,8 @@ export default class Matrix extends Component {
 
 Matrix.defaultProps = {
   values: (() => {
-    let defRows = ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00'];
-    return (new Array(10).fill(defRows))
+    let defRow = ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00'];
+    let defRows = new Array(10).fill(defRow)
+    return defRows
   })
 }
